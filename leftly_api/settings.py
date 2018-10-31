@@ -5,6 +5,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = "CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead)."
 
+SLACK_CLIENT_ID = os.environ.get('SLACK_CLIENT_ID', None)
+SLACK_CLIENT_SECRET = os.environ.get('SLACK_CLIENT_SECRET', None)
+SLACK_VERIFICATION_TOKEN = os.environ.get('SLACK_VERIFICATION_TOKEN', None)
+SLACK_BOT_USER_TOKEN = os.environ.get('SLACK_BOT_USER_TOKEN', None)
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -17,6 +22,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "events",
     "posts",
 ]
 
