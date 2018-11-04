@@ -1,5 +1,5 @@
 POST_TYPE = (
-    ('POST', 'Post'),
-    ('RETWEET', 'Retweet'),
-    ('VIDEO', 'Video'),
+    ('post', 'Post'),
+    ('retweet', 'Retweet'),
+    ('video', 'Video'),
 )

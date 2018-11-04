@@ -10,6 +10,11 @@ SLACK_CLIENT_SECRET = os.environ.get('SLACK_CLIENT_SECRET', None)
 SLACK_VERIFICATION_TOKEN = os.environ.get('SLACK_VERIFICATION_TOKEN', None)
 SLACK_BOT_USER_TOKEN = os.environ.get('SLACK_BOT_USER_TOKEN', None)
 
+TWITTER_CONSUMER_KEY = os.environ.get('TWITTER_CONSUMER_KEY', None)
+TWITTER_CONSUMER_SECRET = os.environ.get('TWITTER_CONSUMER_SECRET', None)
+TWITTER_ACCESS_TOKEN_KEY = os.environ.get('TWITTER_ACCESS_TOKEN_KEY', None)
+TWITTER_ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET', None)
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -22,7 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "events",
+    "actions",
     "posts",
 ]
 
