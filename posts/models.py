@@ -47,7 +47,7 @@ class Post(models.Model):
 
     tweet_owner = models.CharField(max_length=100, blank=True, null=True)
     tweet_owner_name = models.CharField(max_length=100, blank=True, null=True)
-    tweet_id = models.IntegerField(blank=True, null=True)
+    tweet_id = models.BigIntegerField(blank=True, null=True)
     tweet_body = models.TextField(max_length=400, blank=True, null=True)
     tweet_owner_avatar = models.URLField(blank=True, null=True)
     tweet_created = models.CharField(max_length=60, blank=True, null=True)
